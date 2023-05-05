@@ -1,9 +1,11 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-  html_document:
-    keep_md: true
+  html_document: 
+    keep_md: yes
 ---
+
+
 
 ## Loading and preprocessing the data
 
@@ -78,7 +80,7 @@ hist(agregateStepsByDay$steps, xlab="Number of Steps Taken",
      main="Histogram steps taken each day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](figure/unnamed-chunk-5-1.png)<!-- -->
 
 3.  Mean and median of steps per day
 
@@ -146,7 +148,7 @@ plot(x=meanStepsInterval$interval, y=meanStepsInterval$steps, type="l",
      ylab="Number of steps", xlab="Intervals (in 5 mins)")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](figure/unnamed-chunk-8-1.png)<!-- -->
 
 2. The 5 min interval containing the maximum of steps
 
@@ -223,7 +225,7 @@ hist(reconstructedTotalStepsDay$steps, breaks=20, xlab="Number of Steps Taken",
      main="Histogram of Total Number of Steps Taken per Day (With Imputed Values)")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](figure/unnamed-chunk-13-1.png)<!-- -->
 
 - Mean an median of total steps
 
@@ -326,4 +328,4 @@ plot(weekendMean$interval, weekendMean$steps, type="l",
      xlab="Intervals (in 5 mins)", ylab="Steps", family="serif",lwd=1.5, ylim=c(0, 230))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-18-1.png)<!-- -->
+![](figure/unnamed-chunk-18-1.png)<!-- -->
